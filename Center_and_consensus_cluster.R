@@ -28,8 +28,7 @@ results[[paste0("top_MAD_", i)]] <- centered}
 return(results)} 
 
 #access the MAD for appropriate n
-mad_results <- compute_metric(vst_transformed_mat)
-
+top_MAD_5000 <- compute_metric(vst_transformed_mat)
 
 ##consensus cluster while varying the pItem
 #usage- run_consensus_clustering_return(matrix)
