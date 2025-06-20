@@ -28,4 +28,5 @@ return(results)}
 
 #access the MAD for appropriate n
 mad_results <- compute_metric(vst_transformed_mat)
-mad_results$top_MAD_5000
+
+
