@@ -1,8 +1,5 @@
-**Input**: A "normalised" RNAseq quantification.
+RNAseq data is widely used to study transcriptomic wide changes in varying biological conditions. In case of clear cut conditions such as treatment/control, Knockout/wildtype, diseased/healthy etc dimensionality reduction methods such as PCA can give us a clear picture of how the biological samples seperate. However, in case where such clean distinction does not exist such as in "all-patients", "all-treatment" samples etc, sub-type identification can be challenging.
 
-**Options**:
-Find the Mean Absolute deviation for "n" number of genes as specified by user and center the matrix.
-Use the centered matrix to consensus cluster samples based on pItem (proportion of samples being randomly sampled) varying from 0.6 to 0.8
+Here, we use a consensus clustering method to seperate out samples where distinction is rather weak or not easily discernable.
 
-
-**Output**: A centered matrix and consensus cluster with varying pItem
+We center the RNAseq matrix and after which we consensus cluster to find various subclasses of patients/samples.
